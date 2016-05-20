@@ -1,18 +1,75 @@
-! If you're looking for settings to configure, they won't be saved here
-!    until you change something in the fluxbox configuration menu.
-
+session.screen0.slit.layer:	Dock
+session.screen0.slit.onhead:	0
+session.screen0.slit.acceptKdeDockapps:	true
+session.screen0.slit.autoHide:	false
+session.screen0.slit.placement:	RightBottom
+session.screen0.slit.alpha:	255
+session.screen0.slit.maxOver:	false
+session.screen0.tabs.usePixmap:	true
+session.screen0.tabs.maxOver:	false
+session.screen0.tabs.intitlebar:	true
+session.screen0.clientMenu.usePixmap:	true
+session.screen0.toolbar.autoHide:	false
+session.screen0.toolbar.layer:	Dock
+session.screen0.toolbar.placement:	TopCenter
+session.screen0.toolbar.height:	0
+session.screen0.toolbar.tools:	prevworkspace, workspacename, nextworkspace, iconbar, systemtray, prevwindow, clock, nextwindow
+session.screen0.toolbar.visible:	true
+session.screen0.toolbar.widthPercent:	100
+session.screen0.toolbar.onhead:	0
+session.screen0.toolbar.alpha:	255
+session.screen0.toolbar.maxOver:	false
+session.screen0.titlebar.left:	
+session.screen0.titlebar.right:	Minimize Maximize 
 session.screen0.iconbar.iconWidth:	250
+session.screen0.iconbar.usePixmap:	true
 session.screen0.iconbar.alignment:	Left
-
-session.screen0.titlebar.left:
-session.screen0.titlebar.right:	Minimize Maximize
-
-session.menuFile:	~/.fluxbox/menu
-session.keyFile: ~/.fluxbox/keys
-session.styleFile: ~/.fluxbox/ubuntu-light
-
+session.screen0.iconbar.iconTextPadding:	10
+session.screen0.iconbar.mode:	{static groups} (workspace)
+session.screen0.tab.placement:	TopLeft
+session.screen0.tab.width:	64
+session.screen0.window.focus.alpha:	255
+session.screen0.window.unfocus.alpha:	255
+session.screen0.menu.alpha:	255
+session.screen0.noFocusWhileTypingDelay:	0
+session.screen0.defaultDeco:	NORMAL
+session.screen0.fullMaximization:	false
+session.screen0.workspacewarping:	true
+session.screen0.focusSameHead:	false
+session.screen0.menuDelay:	200
+session.screen0.workspaceNames:	\345\267\245\344\275\234\345\214\272 1,\345\267\245\344\275\234\345\214\272 2,\345\267\245\344\275\234\345\214\272 3,\345\267\245\344\275\234\345\214\272 4,
+session.screen0.maxIgnoreIncrement:	true
+session.screen0.rowPlacementDirection:	LeftToRight
+session.screen0.workspaces:	4
+session.screen0.focusModel:	ClickFocus
+session.screen0.showwindowposition:	false
+session.screen0.edgeSnapThreshold:	10
+session.screen0.maxDisableMove:	false
+session.screen0.autoRaise:	true
+session.screen0.tabFocusModel:	ClickToTabFocus
+session.screen0.colPlacementDirection:	TopToBottom
+session.screen0.tooltipDelay:	500
+session.screen0.opaqueMove:	true
+session.screen0.windowPlacement:	RowMinOverlapPlacement
+session.screen0.focusNewWindows:	true
+session.screen0.clickRaises:	true
+session.screen0.maxDisableResize:	false
+session.screen0.windowMenu:	/home/mw/.fluxbox/windowmenu
+session.screen0.allowRemoteActions:	false
+session.screen0.strftimeFormat:	%C%y-%m-%d=%w %02k:%M:%S
+session.doubleClickInterval:	250
 session.configVersion:	13
-session.screen0.toolbar.widthPercent: 100
-
-session.screen0.strftimeFormat: %C%y-%m-%d=%w %02k:%M:%S
-session.screen0.toolbar.tools: prevworkspace, workspacename, nextworkspace, iconbar, systemtray, prevwindow, clock, nextwindow
+session.menuFile:	~/.fluxbox/menu
+session.styleOverlay:	/home/mw/.fluxbox/overlay
+session.forcePseudoTransparency:	false
+session.cacheMax:	200
+session.tabsAttachArea:	Window
+session.slitlistFile:	/home/mw/.fluxbox/slitlist
+session.tabPadding:	0
+session.colorsPerChannel:	4
+session.keyFile:	~/.fluxbox/keys
+session.autoRaiseDelay:	250
+session.cacheLife:	5
+session.appsFile:	/home/mw/.fluxbox/apps
+session.ignoreBorder:	false
+session.styleFile:	~/.fluxbox/ubuntu-light
