@@ -71,7 +71,7 @@ Mod4 f :MacroCmd {MoveTo 0 0 TopLeft} {MoveTo * 0 Center}
 Mod4 g :MacroCmd {MoveTo 0 0 Center} {}
 Mod4 h :MacroCmd {MoveTo 0 0 TopRight} {MoveTo * 0 Center}
 Mod4 v :MacroCmd {MoveTo 0 0 BottomLeft} {}
-Mod4 b :MacroCmd {MoveTo 0 0 BottomLeft} {MoveTo 0 * Center}
+Mod4 b :MacroCmd {MoveTo 0 0 BottomRight} {MoveTo 0 * Center}
 Mod4 n :MacroCmd {MoveTo 0 0 BottomRight} {}
 
 Shift Mod4 r :MacroCmd {ResizeTo 50% 50%} {MoveTo 0 0 TopLeft} {}
