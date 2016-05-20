@@ -74,25 +74,25 @@ Mod4 v :MacroCmd {MoveTo 0 0 BottomLeft} {}
 Mod4 b :MacroCmd {MoveTo 0 0 BottomRight} {MoveTo 0 * Center}
 Mod4 n :MacroCmd {MoveTo 0 0 BottomRight} {}
 
-Shift Mod4 r :MacroCmd {ResizeTo 50% 50%} {MoveTo 0 0 TopLeft} {}
-Shift Mod4 t :MacroCmd {ResizeTo 50% 50%} {MoveTo 0 0 TopeLeft} {MoveTo 0 * Center}
-Shift Mod4 y :MacroCmd {ResizeTo 50% 50%} {MoveTo 0 0 TopRight} {}
-Shift Mod4 f :MacroCmd {ResizeTo 50% 50%} {MoveTo 0 0 TopLeft} {MoveTo * 0 Center}
-Shift Mod4 g :MacroCmd {ResizeTo 50% 50%} {MoveTo 0 0 Center} {}
-Shift Mod4 h :MacroCmd {ResizeTo 50% 50%} {MoveTo 0 0 TopRight} {MoveTo * 0 Center}
-Shift Mod4 v :MacroCmd {ResizeTo 50% 50%} {MoveTo 0 0 BottomLeft} {}
-Shift Mod4 b :MacroCmd {ResizeTo 50% 50%} {MoveTo 0 0 BottomLeft} {MoveTo 0 * Center}
-Shift Mod4 n :MacroCmd {ResizeTo 50% 50%} {MoveTo 0 0 BottomRight} {}
+Shift Mod4 r :MacroCmd {ResizeTo  50%  50%} {MoveTo 0 0 TopLeft}  {}
+Shift Mod4 t :MacroCmd {ResizeTo 100%  50%} {MoveTo 0 0 TopeLeft} {MoveTo 0 * Center}
+Shift Mod4 y :MacroCmd {ResizeTo  50%  50%} {MoveTo 0 0 TopRight} {}
+Shift Mod4 f :MacroCmd {ResizeTo  50% 100%} {MoveTo 0 0 TopLeft}  {MoveTo * 0 Center}
+Shift Mod4 g :MacroCmd {ResizeTo  75%  75%} {MoveTo 0 0 Center}   {}
+Shift Mod4 h :MacroCmd {ResizeTo  50% 100%} {MoveTo 0 0 TopRight} {MoveTo * 0 Center}
+Shift Mod4 v :MacroCmd {ResizeTo  50%  50%} {MoveTo 0 0 BottomLeft}  {}
+Shift Mod4 b :MacroCmd {ResizeTo 100%  50%} {MoveTo 0 0 BottomLeft}  {MoveTo 0 * Center}
+Shift Mod4 n :MacroCmd {ResizeTo  50%  50%} {MoveTo 0 0 BottomRight} {}
 
-Control Mod4 r :MacroCmd {ResizeTo 70% 70%} {} {}
-Control Mod4 t :MacroCmd {ResizeTo 80% 80%} {} {}
-Control Mod4 y :MacroCmd {ResizeTo 90% 90%} {} {}
-Control Mod4 f :MacroCmd {ResizeTo 40% 40%} {} {}
-Control Mod4 g :MacroCmd {ResizeTo 50% 50%} {} {}
-Control Mod4 h :MacroCmd {ResizeTo 60% 60%} {} {}
-Control Mod4 v :MacroCmd {ResizeTo 10% 10%} {} {}
-Control Mod4 b :MacroCmd {ResizeTo 20% 20%} {} {}
-Control Mod4 n :MacroCmd {ResizeTo 30% 30%} {} {}
+Control Mod4 r :MacroCmd {ResizeTo 70% 70%} {MoveTo 0 0 Center}
+Control Mod4 t :MacroCmd {ResizeTo 80% 80%} {MoveTo 0 0 Center}
+Control Mod4 y :MacroCmd {ResizeTo 90% 90%} {MoveTo 0 0 Center}
+Control Mod4 f :MacroCmd {ResizeTo 40% 40%} {MoveTo 0 0 Center}
+Control Mod4 g :MacroCmd {ResizeTo 50% 50%} {MoveTo 0 0 Center}
+Control Mod4 h :MacroCmd {ResizeTo 60% 60%} {MoveTo 0 0 Center}
+Control Mod4 v :MacroCmd {ResizeTo 10% 10%} {MoveTo 0 0 Center}
+Control Mod4 b :MacroCmd {ResizeTo 20% 20%} {MoveTo 0 0 Center}
+Control Mod4 n :MacroCmd {ResizeTo 30% 30%} {MoveTo 0 0 Center}
 
 # volume settings, using common keycodes
 # if these don't work, use xev to find out your real keycodes
