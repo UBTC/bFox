@@ -1,0 +1,13 @@
+! If you're looking for settings to configure, they won't be saved here until
+! you change something in the fluxbox configuration menu.
+
+session.screen0.iconbar.iconWidth:	75
+session.screen0.titlebar.left:
+session.screen0.titlebar.right:	Minimize Maximize
+session.menuFile:	~/.fluxbox/menu
+session.keyFile: ~/.fluxbox/keys
+session.styleFile: ~/.fluxbox/ubuntu-light
+session.configVersion:	13
+session.screen0.toolbar.widthPercent: 100
+session.screen0.strftimeFormat: %d %b, %a %02k:%M:%S
+session.screen0.toolbar.tools: prevworkspace, workspacename, nextworkspace, clock, prevwindow, nextwindow, iconbar, systemtray
