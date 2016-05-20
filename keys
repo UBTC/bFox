@@ -57,11 +57,12 @@ Mod4 9 :Tab 9
 Mod4 0 :Tab 10
 
 # launch apps
-Shift Mod4 s :Exec x-terminal-emulator
-Shift Mod4 d :Exec thunar
-Shift Mod4 w :Exec x-www-browser
-Shift Mod4 e :Exec emacs
-Mod4 x :Exec xfce4-appfinder --disable-server
+Mod4 s :If {Some Matches (.*term.*)} {NextWindow (.*term.*)} {Exec x-terminal-emulator}
+Mod4 d :If {Some Matches (thunar)} {NextWindow (thunar)} {Exec thunar}
+Mod4 w :If {Some Matches (google-chrome.*)} {NextWindow (google-chrome.*)} {Exec google-chrome}
+Mod4 e :If {Some Matches (emacs)} {NextWindow (emacs)} {Exec emacs}
+Mod4 x :If {Some Matches (xfce4-appfinder)} {NextWindow (xfce4-appfinder)} {Exec xfce4-appfinder --disable-server}
+Shift Mod4 x :Fullscreen
 
 # move resize
 Mod4 r :MacroCmd {MoveTo 0 0 TopLeft} {}
@@ -94,39 +95,38 @@ Control Mod4 v :MacroCmd {ResizeTo 10% 10%} {MoveTo 0 0 Center}
 Control Mod4 b :MacroCmd {ResizeTo 20% 20%} {MoveTo 0 0 Center}
 Control Mod4 n :MacroCmd {ResizeTo 30% 30%} {MoveTo 0 0 Center}
 
-# volume settings, using common keycodes
-# if these don't work, use xev to find out your real keycodes
+# volume settings with common keycodes # you may need to use xev to find out real keycodes
 176 :Exec amixer sset Master,0 1+
 174 :Exec amixer sset Master,0 1-
 160 :Exec amixer sset Master,0 toggle
 
 # current window commands
+Mod4 c :ShowDesktop
 Shift Mod4 c :Close
-Mod4 z :Fullscreen
-
-# open menus
-Mod4 q :WorkspaceMenu
-Shift Mod4 q :RootMenu
-
 Mod4 Up :Maximize
 Mod4 Down :Minimize
 
-# open the window menu
-Mod4 space :WindowMenu
+# open menus
+Mod4 q :WindowMenu
+Shift Mod4 q :RootMenu
+Mod4 space :WorkspaceMenu
+
+# add/del workspaces
+Mod4 z :AddWorkspace
+Shift Mod4 z :RemoveLastWorkspace
 
 # exit fluxbox
-Shift Control Mod4 BackSpace :Exit
+#Shift Control Mod4 BackSpace :Exit
 
 # change to previous/next workspace
-
 Control Mod4 Left :PrevWorkspace
 Control Mod4 Right :NextWorkspace
 Mod4 a :NextWorkspace
+Shift Mod4 a :PrevWorkspace
 
 # send the current window and follow it to previous/next workspace
 Control Shift Mod4 Left :TakeToPrevWorkspace
 Control Shift Mod4 Right :TakeToNextWorkspace
-Shift Mod4 a :SendToNextWorkspace
 
 # change to a specific workspace
 Mod4 F1 :Workspace 1
