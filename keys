@@ -40,7 +40,9 @@ OnTitlebar Mouse3 :WindowMenu
 
 # alt-tab
 Mod4 Tab :ClientMenu
-Shift Mod4 Tab :WorkspaceMenu
+Shift Mod4 Tab :ClientMenu
+Mod4 Left :NextWindow {groups} (workspace=[current])
+Mod4 Right :PrevWindow {groups} (workspace=[current])
 
 # go to a specific tab in the current window
 Mod4 1 :Tab 1
@@ -61,6 +63,37 @@ Shift Mod4 w :Exec x-www-browser
 Shift Mod4 e :Exec emacs
 Mod4 x :Exec xfce4-appfinder --disable-server
 
+# move resize
+Mod4 r :MacroCmd {MoveTo 0 0 TopLeft} {}
+Mod4 t :MacroCmd {MoveTo 0 0 TopeLeft} {MoveTo 0 * Center}
+Mod4 y :MacroCmd {MoveTo 0 0 TopRight} {}
+Mod4 f :MacroCmd {MoveTo 0 0 TopLeft} {MoveTo * 0 Center}
+Mod4 g :MacroCmd {MoveTo 0 0 Center} {}
+Mod4 h :MacroCmd {MoveTo 0 0 TopRight} {MoveTo * 0 Center}
+Mod4 v :MacroCmd {MoveTo 0 0 BottomLeft} {}
+Mod4 b :MacroCmd {MoveTo 0 0 BottomLeft} {MoveTo 0 * Center}
+Mod4 n :MacroCmd {MoveTo 0 0 BottomRight} {}
+
+Shift Mod4 r :MacroCmd {ResizeTo 50% 50%} {MoveTo 0 0 TopLeft} {}
+Shift Mod4 t :MacroCmd {ResizeTo 50% 50%} {MoveTo 0 0 TopeLeft} {MoveTo 0 * Center}
+Shift Mod4 y :MacroCmd {ResizeTo 50% 50%} {MoveTo 0 0 TopRight} {}
+Shift Mod4 f :MacroCmd {ResizeTo 50% 50%} {MoveTo 0 0 TopLeft} {MoveTo * 0 Center}
+Shift Mod4 g :MacroCmd {ResizeTo 50% 50%} {MoveTo 0 0 Center} {}
+Shift Mod4 h :MacroCmd {ResizeTo 50% 50%} {MoveTo 0 0 TopRight} {MoveTo * 0 Center}
+Shift Mod4 v :MacroCmd {ResizeTo 50% 50%} {MoveTo 0 0 BottomLeft} {}
+Shift Mod4 b :MacroCmd {ResizeTo 50% 50%} {MoveTo 0 0 BottomLeft} {MoveTo 0 * Center}
+Shift Mod4 n :MacroCmd {ResizeTo 50% 50%} {MoveTo 0 0 BottomRight} {}
+
+Control Mod4 r :MacroCmd {ResizeTo 70% 70%} {} {}
+Control Mod4 t :MacroCmd {ResizeTo 80% 80%} {} {}
+Control Mod4 y :MacroCmd {ResizeTo 90% 90%} {} {}
+Control Mod4 f :MacroCmd {ResizeTo 40% 40%} {} {}
+Control Mod4 g :MacroCmd {ResizeTo 50% 50%} {} {}
+Control Mod4 h :MacroCmd {ResizeTo 60% 60%} {} {}
+Control Mod4 v :MacroCmd {ResizeTo 10% 10%} {} {}
+Control Mod4 b :MacroCmd {ResizeTo 20% 20%} {} {}
+Control Mod4 n :MacroCmd {ResizeTo 30% 30%} {} {}
+
 # volume settings, using common keycodes
 # if these don't work, use xev to find out your real keycodes
 176 :Exec amixer sset Master,0 1+
@@ -72,31 +105,28 @@ Shift Mod4 c :Close
 Mod4 z :Fullscreen
 
 # open menus
-Mod4 q :WindowMenu
+Mod4 q :WorkspaceMenu
 Shift Mod4 q :RootMenu
 
 Mod4 Up :Maximize
 Mod4 Down :Minimize
 
 # open the window menu
-Mod1 space :WindowMenu
+Mod4 space :WindowMenu
 
 # exit fluxbox
 Shift Control Mod4 BackSpace :Exit
 
 # change to previous/next workspace
-Mod4 Left :PrevWorkspace
-Mod4 Right :NextWorkspace
+
+Control Mod4 Left :PrevWorkspace
+Control Mod4 Right :NextWorkspace
 Mod4 a :NextWorkspace
 
-# send the current window to previous/next workspace
-Shift Mod4 Left :SendToPrevWorkspace
-Shift Mod4 Right :SendToNextWorkspace
-Shift Mod4 a :SendToNextWorkspace
-
 # send the current window and follow it to previous/next workspace
-Control Mod4 Left :TakeToPrevWorkspace
-Control Mod4 Right :TakeToNextWorkspace
+Control Shift Mod4 Left :TakeToPrevWorkspace
+Control Shift Mod4 Right :TakeToNextWorkspace
+Shift Mod4 a :SendToNextWorkspace
 
 # change to a specific workspace
 Mod4 F1 :Workspace 1
