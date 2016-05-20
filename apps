@@ -3,6 +3,11 @@
   [Layer]	{2}
 [end]
 
+[app] (name=xfrun4)
+  [Position]	(WINCENTER)	{0 0}
+  [Layer]	{2}
+[end]
+
 [app] (name=xfce4-appfinder)
   [Position]	(WINCENTER)	{0 0}
   [Layer]	{2}
@@ -10,6 +15,4 @@
 
 [app] (role=panel)
   [Hidden]	{yes}
-  [Layer]	{2}
 [end]
-

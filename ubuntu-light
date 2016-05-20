@@ -7,7 +7,7 @@
 #
 ############################################################## BACKGROUND ######
 
-# background: 					flat 
+# background: 					flat
 # background.color: 				#2c001e
 # background.colorTo:				#2c001e
 
@@ -16,7 +16,7 @@ background.pixmap:      /usr/share/images/fluxbox/ubuntu-light.png
 
 ############################################################## FONTS ##########
 
-					
+
 menu.frame.font:				Ubuntu 10:bold
 menu.title.font:				Ubuntu 12:bold
 toolbar.clock.font:				Ubuntu 10:bold
@@ -44,7 +44,7 @@ menu.title.color:				#FFFFFF
 menu.title.colorTo:				#FFFFFF
 menu.title.textColor:				#333333
 
-menu.frame:					flat gradient crossdiagonal	
+menu.frame:					flat gradient crossdiagonal
 menu.frame.justify:				left
 menu.frame.color:				#FFFFFF
 menu.frame.colorTo:				#FFFFFF
@@ -63,12 +63,12 @@ toolbar.bevelWidth:				0
 toolbar.borderWidth:				1
 toolbar.borderColor:				#aea79f
 
-toolbar.height:					20
+toolbar.height:					25
 
 toolbar.justify:				center
 
 toolbar:					flat gradient rectangle
-toolbar.pixmap:					
+toolbar.pixmap:
 toolbar.color:					#aea79f
 toolbar.colorTo:				#aea79f
 
@@ -84,11 +84,11 @@ toolbar.workspace.color:			#
 toolbar.workspace.colorTo:			#
 toolbar.workspace.textColor:			#333333
 
-toolbar.button:					parentrelative 
+toolbar.button:					parentrelative
 toolbar.button.color:				#333333
 toolbar.button.colorTo:				#333333
 toolbar.button.picColor:			#333333
-toolbar.button.pressed:				parentrelative 
+toolbar.button.pressed:				parentrelative
 toolbar.button.pressed.color:			#aea79f
 toolbar.button.pressed.colorTo:			#aea79f
 toolbar.button.pressed.picColor:		#000000
@@ -125,7 +125,7 @@ window.borderWidth:				1
 window.borderColor:				#333333
 
 window.justify:					Center
-window.title.height:				21
+window.title.height:				25
 
 window.title.focus:				flat gradient rectangle
 window.title.focus.color:			#000000
@@ -162,7 +162,7 @@ window.handle.focus.colorTo:			#1f1f1f
 window.handle.unfocus:				lat
 window.handle.unfocus.color:			#1f1f1f
 window.handle.unfocus.colorTo:			#1f1f1f
-window.handleWidth:				2
+window.handleWidth:				1
 
 window.grip.focus:				flat
 window.grip.focus.color:			#525252
