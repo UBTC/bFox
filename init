@@ -72,4 +72,4 @@ session.autoRaiseDelay:	250
 session.cacheLife:	5
 session.appsFile:	/home/mw/.fluxbox/apps
 session.ignoreBorder:	false
-session.styleFile:	~/.fluxbox/ubuntu-light
+session.styleFile:	~/.fluxbox/ubuntu_lite

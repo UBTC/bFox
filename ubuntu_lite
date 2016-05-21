@@ -1,0 +1,175 @@
+###############################################################################
+#
+# frame and color scheme are taken from
+# name: ubuntu_light
+# made: paultag
+# date: 16-10-2010
+# http://pault.ag/
+#
+# name: zimek_green
+# made: tenner
+# date: 18-09-2007
+# http://www.tenr.de
+#
+############################################################## BACKGROUND ######
+
+background: fullscreen
+background.pixmap: ~/.fluxbox/wallpaper.jpg
+
+############################################################## FONTS ##########
+
+
+menu.frame.font: Ubuntu 10
+menu.title.font: Ubuntu 10:bold
+toolbar.clock.font: Ubuntu 10
+toolbar.workspace.font: Ubuntu 10
+toolbar.iconbar.focused.font: Ubuntu 10:bold
+toolbar.iconbar.unfocused.font: Ubuntu 10
+window.font: Ubuntu 10
+
+############################################################## MENU ###########
+
+menu.bevelWidth: 1
+
+menu.borderColor: #63634a
+menu.borderWidth: 1
+
+menu.bullet: Triangle
+menu.bullet.position: Right
+menu.frame.underlineColor: #e7e7e7
+
+menu.title: flat gradient rectangle
+menu.title.justify: center
+menu.title.color: #add07e
+menu.title.colorTo: #718541
+menu.title.textColor: #e7e7e7
+
+menu.frame: flat gradient crossdiagonal
+menu.frame.justify: left
+menu.frame.color: #f0efe9
+menu.frame.colorTo: #bfbeb2
+menu.frame.textColor: #63634a
+menu.frame.disableColor: #5e873a
+
+menu.hilite: flat gradient rectangle
+menu.hilite.color: #98977b
+menu.hilite.colorTo: #98977b
+menu.hilite.textColor: #e7e7e7
+
+############################################################## TOOLBAR ########
+
+toolbar.bevelWidth: 0
+
+toolbar.borderWidth: 1
+toolbar.borderColor: #63634a
+
+toolbar.height: 25
+
+toolbar.justify: center
+
+toolbar: flat gradient rectangle
+toolbar.pixmap:
+toolbar.color: #f0efe9
+toolbar.colorTo: #bfbeb2
+
+toolbar.clock: parentrelative
+toolbar.clock.justify: center
+toolbar.clock.color: #
+toolbar.clock.colorTo: #
+toolbar.clock.textColor: #63634a
+
+toolbar.workspace: parentrelative
+toolbar.workspace.justify: Center
+toolbar.workspace.color: #
+toolbar.workspace.colorTo: #
+toolbar.workspace.textColor: #63634a
+
+toolbar.button: parentrelative
+toolbar.button.color: #
+toolbar.button.colorTo: #
+toolbar.button.picColor: #
+toolbar.button.pressed: parentrelative
+toolbar.button.pressed.color: #
+toolbar.button.pressed.colorTo: #
+toolbar.button.pressed.picColor: #000000
+
+toolbar.iconbar.borderWidth: 1
+toolbar.iconbar.borderColor: #63634a
+
+toolbar.iconbar.empty: parentrelative
+toolbar.iconbar.empty.color: #
+toolbar.iconbar.empty.colorTo: #
+
+toolbar.iconbar.focused.borderWidth: 1
+toolbar.iconbar.focused.borderColor: #63634a
+toolbar.iconbar.focused: flat gradient rectangle
+toolbar.iconbar.focused.color: #add07e
+toolbar.iconbar.focused.colorTo: #718541
+toolbar.iconbar.focused.textColor: #e7e7e7
+toolbar.iconbar.focused.justify: center
+
+toolbar.iconbar.unfocused.borderWidth: 1
+toolbar.iconbar.unfocused.borderColor: #63634a
+toolbar.iconbar.unfocused: flat gradient rectangle
+toolbar.iconbar.unfocused.color: #f0efe9
+toolbar.iconbar.unfocused.colorTo: #bfbeb2
+toolbar.iconbar.unfocused.textColor: #63634a
+toolbar.iconbar.unfocused.justify: center
+
+############################################################## WINDOW #########
+
+window.roundCorners: TopRight TopLeft
+window.bevelWidth: 4
+window.shade: false
+window.borderWidth: 1
+window.borderColor: #63634a
+
+window.justify: Center
+window.title.height: 25
+
+window.title.focus: flat gradient rectangle
+window.title.focus.color: #add07e
+window.title.focus.colorTo: #718541
+window.title.unfocus: flat gradient rectangle
+window.title.unfocus.color: #f0efe9
+window.title.unfocus.colorTo: #bfbeb2
+
+window.label.focus: parentrelative
+window.label.focus.color: #
+window.label.focus.colorTo: #
+window.label.focus.textColor: #e7e7e7
+window.label.unfocus: parentrelative
+window.label.unfocus.color: #
+window.label.unfocus.colorTo: #
+window.label.unfocus.textColor: #63634a
+
+window.button.focus: parentrelative
+window.button.focus.color: #
+window.button.focus.colorTo: #
+window.button.focus.picColor: #ffffff
+window.button.unfocus: parentrelative
+window.button.unfocus.Color: #
+window.button.unfocus.ColorTo: #
+window.button.unfocus.picColor: #63634a
+window.button.pressed: parentrelative
+window.button.pressed.color: #
+window.button.pressed.colorTo: #
+window.button.pressed.picColor: #000000
+
+window.handle.focus: flat
+window.handle.focus.color: #add07e
+window.handle.focus.colorTo: #add07e
+window.handle.unfocus: flat
+window.handle.unfocus.color: #f0efe9
+window.handle.unfocus.colorTo: #f0efe9
+window.handleWidth: 2
+
+window.grip.focus: flat
+window.grip.focus.color: #63634a
+window.grip.focus.colorTo: #63634a
+window.grip.unfocus: flat
+window.grip.unfocus.color: #63634a
+window.grip.unfocus.colorTo: #63634a
+
+###############################################################################
+# EOF
