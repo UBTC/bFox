@@ -18,7 +18,7 @@ xsetroot -solid black  -cursor_name left_ptr
 pkill xscreensaver; xscreensaver -no-splash &
 pkill xfce4-power-manager; xfce4-power-manager &
 pkill hamster-time-tracker; hamster-time-tracker &
-play /home/mw/MEGAsync/Music/login-sound/ubuntu11/desktop-login.ogg
+play ~/MEGAsync/Music/login-sound/ubuntu11/desktop-login.ogg
 
 # And last but not least we start fluxbox.
 # Because it is the last app, you have to run it with "exec" before it.

@@ -21,7 +21,7 @@ session.screen0.toolbar.alpha:	255
 session.screen0.toolbar.maxOver:	false
 session.screen0.titlebar.left:
 session.screen0.titlebar.right:	Minimize Maximize
-session.screen0.iconbar.iconWidth:	250
+session.screen0.iconbar.iconWidth:	300
 session.screen0.iconbar.usePixmap:	true
 session.screen0.iconbar.alignment:	Left
 session.screen0.iconbar.iconTextPadding:	10
@@ -54,22 +54,22 @@ session.screen0.windowPlacement:	RowMinOverlapPlacement
 session.screen0.focusNewWindows:	true
 session.screen0.clickRaises:	true
 session.screen0.maxDisableResize:	false
-session.screen0.windowMenu:	/home/mw/.fluxbox/windowmenu
+session.screen0.windowMenu:	~/.fluxbox/windowmenu
 session.screen0.allowRemoteActions:	false
 session.screen0.strftimeFormat:	%C%y-%m-%d=%w %02k:%M:%S
-session.doubleClickInterval:	250
+session.doubleClickInterval:	400
 session.configVersion:	13
 session.menuFile:	~/.fluxbox/menu
-session.styleOverlay:	/home/mw/.fluxbox/overlay
+session.styleOverlay:	~/.fluxbox/overlay
 session.forcePseudoTransparency:	false
 session.cacheMax:	200
 session.tabsAttachArea:	Window
-session.slitlistFile:	/home/mw/.fluxbox/slitlist
+session.slitlistFile:	~/.fluxbox/slitlist
 session.tabPadding:	0
 session.colorsPerChannel:	4
 session.keyFile:	~/.fluxbox/keys
 session.autoRaiseDelay:	250
 session.cacheLife:	5
-session.appsFile:	/home/mw/.fluxbox/apps
+session.appsFile:	~/.fluxbox/apps
 session.ignoreBorder:	false
 session.styleFile:	~/.fluxbox/ubuntu_lite
