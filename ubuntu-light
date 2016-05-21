@@ -12,7 +12,7 @@
 # background.colorTo:				#2c001e
 
 background:             fullscreen
-background.pixmap:      /usr/share/images/fluxbox/ubuntu-light.png
+background.pixmap:      ~/.fluxbox/wallpaper1.jpg
 
 ############################################################## FONTS ##########
 
