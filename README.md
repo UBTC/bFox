@@ -1,9 +1,9 @@
 # bFox
 
 [fluxbox](http://fluxbox.org) is an excellent X window manager.
-It is stable, can be elegantly configurated, works well with applications, and is well maintained.
-
-bFox is a set of `fluxbox` configurations, which is designed to work with `xfce4-desktop`.
+It is stable, can be elegantly configurated, works well with applications,
+and is well maintained (although some docs seem out of date).
+bFox is a set of configurations for `fluxbox`, and is designed to work with `xfce4-desktop`.
 
 ## To use bFox, please
 - backup your previous `fluxbox` configurations in `~/.fluxbox/`

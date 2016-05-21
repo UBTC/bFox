@@ -1,18 +1,45 @@
 [app] (name=fbrun)
   [Position]	(WINCENTER)	{0 0}
   [Layer]	{2}
+  [Deco]	(TINY)
 [end]
 
 [app] (name=xfrun4)
   [Position]	(WINCENTER)	{0 0}
   [Layer]	{2}
+  [Deco]	(BORDER)
 [end]
 
 [app] (name=xfce4-appfinder)
   [Position]	(WINCENTER)	{0 0}
   [Layer]	{2}
+  [Deco]	(BORDER)
+[end]
+
+[app] (role=normal)
+  [Position]	(WINCENTER)	{0 0}
+  [Maximized]	{yes}
 [end]
 
 [app] (role=panel)
+  [Hidden]	{yes}
+  [Layer]	{2}
+  [Sticky]	{yes}
+[end]
+
+[app] (role=dock)
+  [Hidden]	{yes}
+  [Layer]	{2}
+  [Sticky]	{yes}
+[end]
+
+[app] (role=dialog)
+  [Position]	(WINCENTER)	{0 0}
+  [Hidden]	{yes}
+  [Deco]	(BORDER)
+[end]
+
+[app] (role=utility)
+  [Deco]	(NONE)
   [Hidden]	{yes}
 [end]
