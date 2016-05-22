@@ -39,10 +39,10 @@ OnTitlebar Mouse2 :Lower
 OnTitlebar Mouse3 :WindowMenu
 
 # win-tab
-Mod4 Tab :ClientMenu
-Shift Mod4 Tab :ClientMenu
-Mod4 Left :NextWindow {groups} (workspace=[current])
-Mod4 Right :PrevWindow {groups} (workspace=[current])
+Mod4 Tab :ClientMenu (workspace=[current]) (iconhidden=no)
+Shift Mod4 Tab :ClientMenu (workspace=[current]) (iconhidden=no)
+Mod4 Left :NextWindow {groups} (workspace=[current]) (iconhidden=no)
+Mod4 Right :PrevWindow {groups} (workspace=[current]) (iconhidden=no)
 
 # go to a specific tab in the current window
 Mod4 1 :Tab 1
