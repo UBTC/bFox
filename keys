@@ -40,7 +40,10 @@ OnTitlebar Mouse3 :WindowMenu
 
 # win-tab
 Mod4 Tab :NextWindow {groups} (workspace=[current])
-Shift Mod4 Tab :ClientMenu (workspace=[current]) (iconhidden=no)
+Shift Mod4 Tab :PrevWindow {groups} (workspace=[current])
+
+Control Shift Mod4 Tab :ClientMenu (workspace=[current]) (iconhidden=no)
+Control Mod4 Tab :ClientMenu (workspace=[current]) (iconhidden=no)
 
 # directionally focus
 Mod4 Left :FocusLeft
