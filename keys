@@ -43,7 +43,7 @@ Mod4 Tab :NextWindow {groups} (workspace=[current])
 Shift Mod4 Tab :PrevWindow {groups} (workspace=[current])
 
 Mod4 grave :ClientMenu (workspace=[current]) (iconhidden=no)
-Shift Mod4 grave :ClientMen (iconhidden=no)
+Shift Mod4 grave :ClientMenu (iconhidden=no)
 
 # directionally focus
 Mod4 Left :FocusLeft
