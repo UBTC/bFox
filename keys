@@ -1,44 +1,36 @@
+# # MOUSE:
 # click on the desktop to get menus
 OnDesktop Mouse1 :HideMenus
 OnDesktop Mouse2 :WorkspaceMenu
 OnDesktop Mouse3 :RootMenu
 
-# scroll on the desktop to change workspaces
-OnDesktop Mouse4 :PrevWorkspace
-OnDesktop Mouse5 :NextWorkspace
-
-# scroll on the toolbar to change current window
-OnToolbar Mouse4 :PrevWindow {static groups} (iconhidden=no)
-OnToolbar Mouse5 :NextWindow {static groups} (iconhidden=no)
+# clike titleBar to focus/move/resize a window
+OnTitlebar Mouse1 :MacroCmd {Raise} {Focus} {ActivateTab}
+OnTitlebar Mouse2 :WindowMenu
+OnTitlebar Mouse3 :MacroCmd {Raise} {Focus} {ActivateTab}
+OnTitlebar Move1 :MacroCmd {Raise} {Focus} {StartMoving}
+OnTitlebar Move3 :MacroCmd {Raise} {Focus} {StartResizing NearestCorner}
 
 # win + left/right click to move/resize a window
 OnWindow Mod4 Mouse1 :MacroCmd {Raise} {Focus} {StartMoving}
-OnWindowBorder Move1 :StartMoving
-
+OnWindow Mod4 Mouse2 :WindowMenu
 OnWindow Mod4 Mouse3 :MacroCmd {Raise} {Focus} {StartResizing NearestCorner}
+
+# drag corner to resize a window
 OnLeftGrip Move1 :StartResizing bottomleft
 OnRightGrip Move1 :StartResizing bottomright
-
-# win + middle click to lower the window
-OnWindow Mod4 Mouse2 :Lower
-
-# control-click a window's titlebar and drag to attach windows
-OnTitlebar Control Mouse1 :StartTabbing
+OnLeftGrip Move3 :StartResizing topleft
+OnRightGrip Move3 :StartResizing topright
 
 # double click on the titlebar to shade
 OnTitlebar Double Mouse1 :Maximize
 
-# left click on the titlebar to move the window
-OnTitlebar Mouse1 :MacroCmd {Raise} {Focus} {ActivateTab}
-OnTitlebar Move1  :StartMoving
+# double-Rclick a window's titlebar and Rdrag to tab windows
+OnTitlebar Double Mouse3 :StartTabbing
 
-# middle click on the titlebar to lower
-OnTitlebar Mouse2 :Lower
 
-# right click on the titlebar for a menu of options
-OnTitlebar Mouse3 :WindowMenu
-
-# win-tab
+# # KEY:
+# window switching
 Mod4 Tab :NextWindow {groups} (workspace=[current])
 Shift Mod4 Tab :PrevWindow {groups} (workspace=[current])
 
@@ -70,7 +62,7 @@ Mod4 w :If {Some Matches (google-chrome.*)} {NextWindow (google-chrome.*)} {Exec
 Mod4 e :If {Some Matches (emacs.*)} {NextWindow (emacs.*)} {Exec emacs}
 Mod4 x :If {Some Matches (xfce4-appfinder)} {NextWindow (xfce4-appfinder)} {Exec xfce4-appfinder --disable-server}
 
-# move resize
+# move/resize
 Mod4 r :MacroCmd {MoveTo 0 0 TopLeft}     {}
 Mod4 t :MacroCmd {MoveTo 0 0 TopLeft}     {MoveTo 0 * Center}
 Mod4 y :MacroCmd {MoveTo 0 0 TopRight}    {}
