@@ -82,7 +82,7 @@ Shift Mod4 h :MacroCmd {ResizeTo 60% 60%} {MoveTo 0 0 Center} {}
 Shift Mod4 v :MacroCmd {ResizeTo 10% 10%} {MoveTo 0 0 Center} {}
 Shift Mod4 b :MacroCmd {ResizeTo 20% 20%} {MoveTo 0 0 Center} {}
 Shift Mod4 n :MacroCmd {ResizeTo 30% 30%} {MoveTo 0 0 Center} {}
-Shift Mod4 x :Fullscreen
+Shift Mod4 x :ShowDesktop
 
 # manual tiling
 Shift Mod4 w :MacroCmd {ResizeTo  50%  50%} {MoveTo 0 0 TopLeft}     {}
@@ -99,11 +99,11 @@ Shift Mod4 Down  :MacroCmd {ResizeTo 100%  50%} {MoveTo 0 0 BottomRight} {MoveTo
 174 :Exec amixer sset Master,0 10-
 #160 :Exec amixer sset Master,0 toggle
 
-# current window commands
-Mod4 c :ShowDesktop
+# current window comands
+Mod4 c :Minimize
 Shift Mod4 c :Close
 Mod4 z :Maximize
-Shift Mod4 z :Minimize
+Shift Mod4 z :Fullscreen
 
 # open menus
 Mod4 q :WindowMenu
