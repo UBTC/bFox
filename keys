@@ -57,7 +57,7 @@ Mod4 0 :Tab 10
 
 # launch apps
 Mod4 s :If {Some Matches (.*term.*)} {NextWindow (.*term.*)} {Exec x-terminal-emulator}
-Mod4 d :If {Some Matches (nautilus)} {NextWindow (nautilus)} {Exec nautilus --no-desktop}
+Mod4 d :If {Some Matches (thunar.*)} {NextWindow (thunar.*)} {Exec thunar}
 Mod4 w :If {Some Matches (google-chrome.*)} {NextWindow (google-chrome.*)} {Exec google-chrome}
 Mod4 e :If {Some Matches (emacs.*)} {NextWindow (emacs.*)} {Exec emacs}
 Mod4 x :If {Some Matches (xfce4-appfinder)} {NextWindow (xfce4-appfinder)} {Exec xfce4-appfinder --disable-server}
