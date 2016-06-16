@@ -33,8 +33,6 @@ OnTitlebar Double Mouse3 :StartTabbing
 # window switching
 Mod4 Tab :NextWindow {groups} (workspace=[current])
 Shift Mod4 Tab :PrevWindow {groups} (workspace=[current])
-Mod4 grave :ClientMenu (workspace=[current]) (iconhidden=no)
-Shift Mod4 grave :ClientMenu (iconhidden=no)
 
 # directionally focus
 Mod4 Left :FocusLeft
@@ -58,6 +56,7 @@ Mod4 0 :Tab 10
 Mod4 a :If {Some Matches (emacs.*)} {NextWindow (emacs.*)} {Exec emacs}
 Mod4 s :If {Some Matches (.*term.*)} {NextWindow (.*term.*)} {Exec x-terminal-emulator}
 Mod4 d :If {Some Matches (zathura.*)} {NextWindow (zathura.*)} {Exec zathura}
+Mod4 q :If {Some Matches (parole.*)} {NextWindow (parole.*)} {Exec parole}
 Mod4 w :If {Some Matches (google-chrome.*)} {NextWindow (google-chrome.*)} {Exec google-chrome}
 Mod4 e :If {Some Matches (thunar.*)} {NextWindow (thunar.*)} {Exec thunar}
 Mod4 x :If {Some Matches (xfce4-appfinder)} {NextWindow (xfce4-appfinder)} {Exec xfce4-appfinder --disable-server}
@@ -113,11 +112,15 @@ Control Mod4 space :WorkspaceMenu
 # exit fluxbox
 #Shift Control Mod4 BackSpace :Exit
 
+# workspace managment
+Shift Mod4 q :AddWorkspace
+Shift Mod4 a :RemoveLastWorkspace
+
 # change to previous/next workspace
 Control Mod4 Left :PrevWorkspace
 Control Mod4 Right :NextWorkspace
-Mod4 q :NextWorkspace
-Shift Mod4 q :PrevWorkspace
+Mod4 grave :NextWorkspace
+Shift Mod4 grave :PrevWorkspace
 
 # send the current window and follow it to previous/next workspace
 Control Shift Mod4 Left :TakeToPrevWorkspace
