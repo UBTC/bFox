@@ -1,7 +1,6 @@
 # # MOUSE:
 # click on the desktop to get menus
 OnDesktop Mouse1 :HideMenus
-OnDesktop Mouse2 :WorkspaceMenu
 OnDesktop Mouse3 :RootMenu
 
 # clike titleBar to focus/move/resize a window
@@ -22,10 +21,8 @@ OnRightGrip Move1 :StartResizing bottomright
 OnLeftGrip Move3 :StartResizing topleft
 OnRightGrip Move3 :StartResizing topright
 
-# double click on the titlebar to shade
+# double click on the titlebar to shade/tab
 OnTitlebar Double Mouse1 :Maximize
-
-# double-Rclick a window's titlebar and Rdrag to tab windows
 OnTitlebar Double Mouse3 :StartTabbing
 
 
@@ -106,8 +103,8 @@ Shift Mod4 z :Fullscreen
 
 # open menus
 Mod4 space :WindowMenu
-Shift Mod4 space :RootMenu
-Control Mod4 space :WorkspaceMenu
+Shift Mod4 space :WorkspaceMenu
+Control Mod4 space :RootMenu
 
 # exit fluxbox
 #Shift Control Mod4 BackSpace :Exit
