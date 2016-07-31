@@ -5,25 +5,28 @@ OnDesktop Mouse3 :RootMenu
 
 # clike titleBar to focus/move/resize a window
 OnTitlebar Mouse1 :MacroCmd {Raise} {Focus} {ActivateTab}
-OnTitlebar Mouse2 :WindowMenu
+OnTitlebar Mouse2 :MacroCmd {Raise} {Focus} {WindowMenu}
 OnTitlebar Mouse3 :MacroCmd {Raise} {Focus} {ActivateTab}
 OnTitlebar Move1 :MacroCmd {Raise} {Focus} {StartMoving}
 OnTitlebar Move3 :MacroCmd {Raise} {Focus} {StartResizing NearestCorner}
 
 # win + left/right click to move/resize a window
 OnWindow Mod4 Mouse1 :MacroCmd {Raise} {Focus} {StartMoving}
-OnWindow Mod4 Mouse2 :WindowMenu
+OnWindow Mod4 Mouse2 :MacroCmd {Raise} {Focus} {WindowMenu}
 OnWindow Mod4 Mouse3 :MacroCmd {Raise} {Focus} {StartResizing NearestCorner}
 
 # drag corner to resize a window
-OnLeftGrip Move1 :StartResizing bottomleft
-OnRightGrip Move1 :StartResizing bottomright
-OnLeftGrip Move3 :StartResizing topleft
-OnRightGrip Move3 :StartResizing topright
+OnLeftGrip Move1 :MacroCmd {Raise} {Focus} {StartMoving}
+OnRightGrip Move1 :MacroCmd {Raise} {Focus} {StartMoving}
+OnLeftGrip Mouse2 :MacroCmd {Raise} {Focus} {WindowMenu}
+OnRightGrip Mouse2 :MacroCmd {Raise} {Focus} {WindowMenu}
+OnLeftGrip Move3 :MacroCmd {Raise} {Focus} {StartResizing bottomleft}
+OnRightGrip Move3 :MacroCmd {Raise} {Focus} {StartResizing bottomright}
 
 # double click on the titlebar to shade/tab
-OnTitlebar Double Mouse1 :Maximize
-OnTitlebar Double Mouse3 :StartTabbing
+OnTitlebar Double Mouse1 :MacroCmd {Raise} {Focus} {Maximize}
+OnTitlebar Double Mouse2 :MacroCmd {Raise} {Focus} {RootMenu}
+OnTitlebar Double Mouse3 :MacroCmd {Raise} {Focus} {StartTabbing}
 
 
 # # KEY:
