@@ -16,12 +16,17 @@ OnWindow Mod4 Mouse2 :MacroCmd {Raise} {Focus} {WindowMenu}
 OnWindow Mod4 Mouse3 :MacroCmd {Raise} {Focus} {StartResizing NearestCorner}
 
 # drag corner to resize a window
-OnLeftGrip Move1 :MacroCmd {Raise} {Focus} {StartMoving}
-OnRightGrip Move1 :MacroCmd {Raise} {Focus} {StartMoving}
+OnLeftGrip Move1 :MacroCmd {Raise} {Focus} {StartResizing bottomleft}
+OnRightGrip Move1 :MacroCmd {Raise} {Focus} {StartResizing bottomright}
+OnLeftGrip Move3 :MacroCmd {Raise} {Focus} {StartMoving}
+OnRightGrip Move3 :MacroCmd {Raise} {Focus} {StartMoving}
+
+OnLeftGrip Mouse1 :MacroCmd {Raise} {Focus} {ActivateTab}
+OnRightGrip Mouse1 :MacroCmd {Raise} {Focus} {ActivateTab}
 OnLeftGrip Mouse2 :MacroCmd {Raise} {Focus} {WindowMenu}
 OnRightGrip Mouse2 :MacroCmd {Raise} {Focus} {WindowMenu}
-OnLeftGrip Move3 :MacroCmd {Raise} {Focus} {StartResizing bottomleft}
-OnRightGrip Move3 :MacroCmd {Raise} {Focus} {StartResizing bottomright}
+OnLeftGrip Mouse3 :MacroCmd {Raise} {Focus} {ActivateTab}
+OnRightGrip Mouse3 :MacroCmd {Raise} {Focus} {ActivateTab}
 
 # double click on the titlebar to shade/tab
 OnTitlebar Double Mouse1 :MacroCmd {Raise} {Focus} {Maximize}
