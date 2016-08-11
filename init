@@ -56,7 +56,7 @@ session.screen0.clickRaises:	true
 session.screen0.maxDisableResize:	false
 session.screen0.windowMenu:	~/.fluxbox/windowmenu
 session.screen0.allowRemoteActions:	false
-session.screen0.strftimeFormat:	%C%y-%m-%d=%w %02k:%M:%S
+session.screen0.strftimeFormat:	%Y-%m-%d=%w %H:%M:%S=%p
 session.doubleClickInterval:	400
 session.configVersion:	13
 session.menuFile:	~/.fluxbox/menu

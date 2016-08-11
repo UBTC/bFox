@@ -15,13 +15,13 @@ background.pixmap: ~/.fluxbox/wallpaper.jpg
 
 ############################################################## FONTS ##########
 
-menu.frame.font: WenQuanYi Zen Hei-12
-menu.title.font: WenQuanYi Zen Hei-13:bold
-toolbar.clock.font: WenQuanYi Zen Hei-12
-toolbar.workspace.font: WenQuanYi Zen Hei-12
-toolbar.iconbar.focused.font: WenQuanYi Zen Hei-12:bold
-toolbar.iconbar.unfocused.font: WenQuanYi Zen Hei-12
-window.font: WenQuanYi Zen Hei-12
+menu.frame.font: WenQuanYi Zen Hei-10
+menu.title.font: WenQuanYi Zen Hei-12:bold
+toolbar.clock.font: WenQuanYi Zen Hei-10
+toolbar.workspace.font: WenQuanYi Zen Hei-10
+toolbar.iconbar.focused.font: WenQuanYi Zen Hei-10:bold
+toolbar.iconbar.unfocused.font: WenQuanYi Zen Hei-10
+window.font: WenQuanYi Zen Hei-10
 
 ############################################################## MENU ###########
 
