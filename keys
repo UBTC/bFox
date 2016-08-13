@@ -60,8 +60,8 @@ Mod4 0 :Tab 10
 # launch apps
 Mod4 a :If {Some Matches (emacs.*)} {NextWindow (emacs.*)} {Exec emacs}
 Mod4 s :If {Some Matches (.*term.*)} {NextWindow (.*term.*)} {Exec x-terminal-emulator}
-Mod4 d :If {Some Matches (mupdf.*)} {NextWindow (mupdf.*)} {}
-Mod4 q :If {Some Matches (parole.*)} {NextWindow (parole.*)} {}
+Mod4 d :If {Some Matches (evince.*)} {NextWindow (evince.*)} {}
+Mod4 q :If {Some Matches (totem.*)} {NextWindow (totem.*)} {}
 Mod4 w :If {Some Matches (Navigator.*)} {NextWindow (Navigator.*)} {Exec firefox}
 Mod4 e :If {Some Matches (thunar.*)} {NextWindow (thunar.*)} {Exec thunar}
 Mod4 x :If {Some Matches (xfce4-appfinder)} {NextWindow (xfce4-appfinder)} {Exec xfce4-appfinder --disable-server}
