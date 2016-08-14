@@ -21,6 +21,12 @@
   [Maximized]	{yes}
 [end]
 
+[app] (name=xfce4-panel)
+  [Hidden]	{yes}
+  [Layer]	{2}
+  [Sticky]	{yes}
+[end]
+
 [app] (role=panel)
   [Hidden]	{yes}
   [Layer]	{2}
