@@ -7,9 +7,10 @@ pkill skype; skype &
 #pkill compton; compton &
 #pkill megasync; megasync &
 pkill nm-applet; nm-applet &
+pkill fcitx; fcitx-autostart &
 pactl set-sink-volume 0 '20%'&
+setxkbmap -option caps:escape &
 pkill xfce4-panel; xfce4-panel &
-setxkbmap -option caps:swapescape &
 pkill xfce4-clipman; xfce4-clipman &
 #xrandr --output eDP1 --right-of DP2 --auto
 #xsetroot -solid black  -cursor_name left_ptr
@@ -17,7 +18,7 @@ pkill xscreensaver; xscreensaver -no-splash &
 pkill xfce4-power-manager; xfce4-power-manager &
 pkill hamster-time-tracker; hamster-time-tracker &
 pkill gnome-settings-daemon; gnome-settings-daemon &
-play ~/MEGAsync/Music/login-sound/ubuntu11/desktop-login.ogg
+mpv   ~/MEGAsync/Music/login-sound/desktop-login.wav
 
 # start fluxbox.  You have to run it with "exec" before it.
 # to keep a log:  exec /usr/bin/fluxbox -log ~/.fluxbox/log

@@ -107,7 +107,8 @@ Shift Mod4 z :Fullscreen
 # open menus
 Mod4 space :WindowMenu
 Shift Mod4 space :RootMenu
-Mod4 Escape :WorkspaceMenu
+Mod4 66 :ClientMenu # CapsLock
+Shift Mod4 66 :WorkspaceMenu # Shift-CapsLock
 
 # workspace managment
 Shift Mod4 q :AddWorkspace
